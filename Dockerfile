@@ -14,5 +14,5 @@ COPY --from=build /home/app/target/jb-hello-world-maven-0.1.0.jar /usr/local/lib
 EXPOSE 8088
 ENTRYPOINT ["java","-jar","/usr/local/lib/demo.jar"]
 
-FROM scratch AS export-stage
-COPY --from=build /home/app/target/jb-hello-world-maven-0.1.0.jar /
+# FROM scratch AS export-stage
+# COPY --from=build /home/app/target/jb-hello-world-maven-0.1.0.jar /
